@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-menu">
+        <h1>Chess Game</h1>
+        <div id="options-container">
+            <button id="play-friend-button">Play with a Friend (Offline)</button>
+            <button id="play-computer-button">Play with Computer (Basic AI)</button>
+            <button id="play-online-button" disabled>Play Online (Coming Soon)</button>
+        </div>
+        <div id="stats-container">
+            <h2>Your Record (vs. Computer)</h2>
+            <p>Wins: <span id="wins-count">0</span></p>
+            <p>Losses: <span id="losses-count">0</span></p>
+            <p>Draws: <span id="draws-count">0</span></p>
+            <button id="reset-stats-button">Reset Stats</button>
+        </div>
+    </div>
+
+    <div id="game-container" style="display: none;">
+        <div id="game-header">
+            <button id="home-button">Home</button>
+            <h2 id="status"></h2>
+        </div>
+        <div id="board"></div>
+        <div id="controls">
+            <button id="undo-button">Undo Last Move</button>
+            <button id="new-game-button">New Game</button>
+        </div>
+    </div>
+
+    <div id="game-over-modal" style="display: none;">
+        <div id="modal-content">
+            <h3 id="game-over-text"></h3>
+            <button id="play-again-button">Play Again</button>
+            <button id="modal-home-button">Home</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
